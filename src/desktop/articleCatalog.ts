@@ -1,0 +1,122 @@
+export type ArticleEntry = {
+  slug: string;
+  category: string;
+  title: string;
+  excerpt: string;
+  focus: string;
+  readTime: string;
+  date: string;
+};
+
+export type ArticleCategory = {
+  name: string;
+  description: string;
+};
+
+export const articleCategories = [
+  {
+    name: 'Tổng quan công ty',
+    description: 'Những bài viết giúp người xem hiểu S8 là ai, đang theo đuổi điều gì và cách thương hiệu định vị mình.',
+  },
+  {
+    name: 'Sản phẩm và trải nghiệm',
+    description: 'Các góc nhìn về giao diện, cấu trúc nội dung, hiệu suất và cách S8 xây dựng trải nghiệm số rõ ràng hơn.',
+  },
+  {
+    name: 'Vận hành và tin cậy',
+    description: 'Những bài viết về bảo mật, chính sách, hỗ trợ và cách S8 duy trì sự minh bạch trong vận hành.',
+  },
+] as const satisfies readonly ArticleCategory[];
+
+export const articleCatalog = [
+  {
+    slug: 'su-menh-va-dinh-huong-cua-s8-platform',
+    category: 'Tổng quan công ty',
+    title: 'Sứ mệnh và định hướng của S8 Platform',
+    excerpt: 'Bài viết giới thiệu cách S8 định vị mình như một nền tảng giải trí kỹ thuật số hiện đại, ổn định và thân thiện với người dùng.',
+    focus: 'Tầm nhìn',
+    readTime: '4 phút đọc',
+    date: '2026-03-05',
+  },
+  {
+    slug: 'gia-tri-cot-loi-dan-dat-trai-nghiem-tai-s8',
+    category: 'Tổng quan công ty',
+    title: 'Giá trị cốt lõi dẫn dắt trải nghiệm tại S8',
+    excerpt: 'Nhìn vào bốn giá trị cốt lõi của S8: đổi mới, minh bạch, trải nghiệm người dùng và bảo mật dữ liệu.',
+    focus: 'Giá trị cốt lõi',
+    readTime: '5 phút đọc',
+    date: '2026-03-08',
+  },
+  {
+    slug: 'cach-s8-thiet-ke-giao-dien-de-de-su-dung-hon',
+    category: 'Sản phẩm và trải nghiệm',
+    title: 'Cách S8 thiết kế giao diện để dễ sử dụng hơn',
+    excerpt: 'Từ nhịp thị giác đến cấu trúc thông tin, S8 ưu tiên sự rõ ràng và thao tác nhanh trên mọi bề mặt hiển thị.',
+    focus: 'Thiết kế giao diện',
+    readTime: '5 phút đọc',
+    date: '2026-03-11',
+  },
+  {
+    slug: 'toi-uu-hieu-suat-la-mot-phan-cua-trai-nghiem',
+    category: 'Sản phẩm và trải nghiệm',
+    title: 'Tối ưu hiệu suất là một phần của trải nghiệm',
+    excerpt: 'S8 xem tốc độ tải, độ mượt và sự ổn định như những yếu tố trực tiếp quyết định chất lượng trải nghiệm số.',
+    focus: 'Hiệu suất',
+    readTime: '6 phút đọc',
+    date: '2026-03-14',
+  },
+  {
+    slug: 'bao-mat-du-lieu-va-su-minh-bach-trong-van-hanh',
+    category: 'Vận hành và tin cậy',
+    title: 'Bảo mật dữ liệu và sự minh bạch trong vận hành',
+    excerpt: 'S8 xây dựng niềm tin bằng cách trình bày rõ những nguyên tắc bảo vệ dữ liệu và cách xử lý thông tin người dùng.',
+    focus: 'Bảo mật',
+    readTime: '6 phút đọc',
+    date: '2026-03-17',
+  },
+  {
+    slug: 'ho-tro-nguoi-dung-va-doi-tac-theo-cach-ro-rang-hon',
+    category: 'Vận hành và tin cậy',
+    title: 'Hỗ trợ người dùng và đối tác theo cách rõ ràng hơn',
+    excerpt: 'Các kênh hỗ trợ và hợp tác tại S8 được tổ chức gọn, minh bạch và dễ liên hệ để giảm ma sát trong giao tiếp.',
+    focus: 'Hỗ trợ',
+    readTime: '4 phút đọc',
+    date: '2026-03-20',
+  },
+  {
+    slug: 'san-sang-cho-nhieu-thi-truong-va-ngu-canh-su-dung',
+    category: 'Tổng quan công ty',
+    title: 'Sẵn sàng cho nhiều thị trường và ngữ cảnh sử dụng',
+    excerpt: 'S8 phát triển nội dung và giao diện theo hướng dễ tiếp cận, phù hợp với nhiều người dùng và nhiều thị trường.',
+    focus: 'Phạm vi toàn cầu',
+    readTime: '5 phút đọc',
+    date: '2026-03-23',
+  },
+  {
+    slug: 'kien-truc-noi-dung-giup-thong-tin-de-theo-doi',
+    category: 'Sản phẩm và trải nghiệm',
+    title: 'Kiến trúc nội dung giúp thông tin dễ theo dõi',
+    excerpt: 'Từ trang giới thiệu đến chính sách, S8 tổ chức nội dung theo lớp để người xem nắm nhanh điều quan trọng nhất.',
+    focus: 'Nội dung',
+    readTime: '5 phút đọc',
+    date: '2026-03-26',
+  },
+  {
+    slug: 'nhung-chinh-sach-co-ban-nguoi-dung-can-biet',
+    category: 'Vận hành và tin cậy',
+    title: 'Những chính sách cơ bản người dùng cần biết',
+    excerpt: 'Bài viết tóm lược các nhóm nội dung quan trọng trong chính sách bảo mật và điều khoản sử dụng của S8.',
+    focus: 'Chính sách',
+    readTime: '6 phút đọc',
+    date: '2026-03-29',
+  },
+  {
+    slug: 'lo-trinh-cai-tien-lien-tuc-cua-s8-platform',
+    category: 'Tổng quan công ty',
+    title: 'Lộ trình cải tiến liên tục của S8 Platform',
+    excerpt: 'S8 xem việc cập nhật hệ thống, tối ưu sản phẩm và nâng cao độ tin cậy là một quá trình liên tục, không phải một đích đến cố định.',
+    focus: 'Cải tiến liên tục',
+    readTime: '6 phút đọc',
+    date: '2026-04-02',
+  },
+] as const satisfies readonly ArticleEntry[];

@@ -1,0 +1,3 @@
+export const DESKTOP_BREAKPOINT = 1024;
+export const DESKTOP_LABEL = `${DESKTOP_BREAKPOINT}px+`;
+export const MOBILE_LABEL = `< ${DESKTOP_BREAKPOINT}px`;
